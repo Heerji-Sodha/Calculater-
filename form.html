@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>calculator</title>
+    <style>
+    .class12{
+border: 1px solid black;
+width: 500px;
+height: 40%;
+background-color: aqua;
+        }
+    body {font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    }
+    * {box-sizing: border-box}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 20%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+       background: #f1f1f1; 
+       border: 1px solid #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 10px;
+      background-color: #f44336;
+      
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 10px;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 150px) {
+      .cancelbtn, .signupbtn {
+         width: 50%;
+      }
+    }
+    #subb{
+        width: 80px;
+    }
+    </style>
+    </head>
+    <body>
+        <center>
+    <div class="class12">
+    <form action="/action_page.php" style="border:1px solid #ccc">
+      <div class="container">
+        <h1>RESULT</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+    
+        <label for="email"><b>Name</b></label>
+        <input type="text" style="border-radius:10px" placeholder="Enter Name" name="email" required id="name">
+    
+        <label for="idno"><b>ID NO</b></label>
+        <input type="text" placeholder="Enter ID No" style="width:20%;border-radius:10px" name="psw" required id="id-no"><br />
+    
+        <label for="sub"><b>Subjects:</b></label><br />
+    
+        <label for="sub"><b>English</b></label>
+        <input type="text" placeholder="marks" style="border-radius:10px" name="repeat" required id="eng">
+    
+        <label for="sub"><b>Maths</b></label>
+        <input type="text" placeholder="marks" style="border-radius:10px" name="repeat" required id="math">
+    
+        <label for="sub"><b>Physics</b></label>
+        <input type="text" placeholder="marks" style="border-radius:10px" name="repeat" required id="phy">
+    
+        <label for="sub"><b>Chemistry</b></label>
+         <input type="text" placeholder="marks" style="border-radius:10px" name="repeat" required id="chem"><br />
+         <div class="clearfix">
+          <button type="button" style="width:80px;border-radius:10px;margin-left: 10px; " class="signupbtn" onclick="btn1()">Submit</button>
+        </div>
+      </div>
+    </form>
+</div>
+<div class="col">
+  <h2>Search ID</h2>
+  <input type="text" class="form-control" style="" placeholder="Enter your Subject" id="seach1"> <br>
+  <input type="button" class="btn btn-info" value="Search" style="width:80px;border-radius:10px;margin-left: 10px;" onclick="searchFun()">
+</div>
+<br><br>
+
+<div style="width:400px;  padding-bottom: 300px;">
+  <table  style="border:1px solid black">
+ <tr>
+ <td colspan="2"> <h1 id="h1" style="background-color:green">Show All Deatil</h1></td>
+</tr>
+<tr>
+<td> Name:</td> <td id="td1"></td>
+</tr>
+<tr>
+<td> ID no:</td> <td id="td2"></td>
+ </tr>
+ <tr>
+<td> Eng</td> <td id="td3"></td>
+</tr>
+<tr>
+ <td> chem</td> <td id="td4"></td>
+</tr>
+
+<tr>
+<td> Phy</td> <td id="td5"></td>
+</tr>
+<tr>
+<td> Math</td> <td id="td6"></td>
+ </tr>
+<tr>
+<td> Total Marks</td> <td id="total"></td> </tr>
+</table>
+</div>
+
+
+</center>
+    </body>
+    <script src="login.js"></script>
+    </html>
+
+
+
+
+
+
+
+
+
+
